@@ -1,0 +1,132 @@
+/* Add this to your existing CSS file or create a new one */
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  .pagination-number-button:hover{
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    background-color: #cecece; 
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; 
+    font-size: 14px; 
+    /* font-weight: bold;  */
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .pagination-button:disabled {
+    color: black;
+    cursor: not-allowed;
+  }
+  
+  .pagination-page-numbers {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .pagination-number-button {
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .pagination-number-button.active {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    background-color: #024571; 
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+    font-size: 14px;    
+    font-weight: bold; 
+    text-align: center;
+    line-height: 1; 
+  }
+  .go-to-page-form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap:55px
+  }
+  
+  .go-to-page-form label {
+    margin-right: 10px;
+  }
+  
+  .go-to-page-form input {
+    padding: 8px;
+    margin-right: 10px;
+    background-color: rgba(209, 209, 209, 0.901);
+    
+  }
+  
+  .go-to-page-form button {
+    padding: 8px;
+    color: blue;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .total-items {
+    margin-left: 10px;
+  }
+  .input-container {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+  }
+  
+  .go-to-page-form input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 90px; /* Adjust the width based on your design */
+    transition: width 0.3s ease; /* Add width transition */
+    border-radius: 10%;
+  }
+  
+  .go-to-page-form input:focus {
+    width: 120px; /* Adjust the width when in focus */
+  }
+  
+  .go-to-page-form .placeholder {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-150%);
+    font-size: 8px;
+    color: #aaa;
+    pointer-events: none;
+    transition: top 0.3s ease, font-size 0.3s ease, left 0.3s ease; 
+   
+  }
+  
+  .go-to-page-form input:focus + .placeholder {
+    top: 10px;
+    left: 0; 
+    font-size: 10px; 
+  }
+  .error-message{
+    color: red;
+  }
