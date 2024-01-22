@@ -14,6 +14,14 @@ const useStyles = makeStyles(() => ({
     marginTop: '16px',
     gap: '30px',
   },
+  // tableContainer: {
+  //   display: 'flex',
+  //   flexDirection: 'column',
+  //   alignItems: 'center',
+  //   maxHeight: '800px', // Set the desired height
+  //   overflow: 'auto',
+  //   width:'full',
+  // },
   totalItems: {
     marginRight: '8px',
     fontWeight: 'bold',
